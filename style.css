@@ -1,0 +1,45 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  padding: 10px;
+}
+
+file-drop {
+  border: dotted black 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  height: calc(90vh - 4em);
+  left: 20px;
+  padding: 1em;
+  position: absolute;
+  width: calc(100% - 40px);
+}
+
+file-drop.drop-valid {
+  background-color: #99d784;
+}
+
+file-drop.drop-invalid {
+  background-color: red;
+}
+
+#reset {
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.8em;
+  right: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+}
+
+#reset:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: default;
+}
