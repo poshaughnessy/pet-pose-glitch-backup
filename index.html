@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
+    <!-- Load Posenet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@0.1.2"></script>
+    <!-- Demo utils from https://github.com/tensorflow/tfjs-models/tree/master/posenet/demos -->
+    <script src="demo-utils.js"></script>
+    <script src="filedrop.umd.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+ </head>
+  <body>
+    <h1>Pet Pose Analyser</h1>
+    <button id="reset" disabled="disabled">Reset</button>
+    <file-drop id="dropTarget" accept="image/*"></file-drop>
+    <canvas id="canvas" style="display: none"></canvas>
+    <img id="image" style="display: none" crossorigin="Anonymous"/>
+    <!--<img id="image" src="https://cdn.glitch.com/dcf50ae8-66e7-44ae-b3f2-50d30b0b4619%2Fpickle-stand.jpg?1537543046548" style="display: none" crossorigin="Anonymous"/>-->
+    <script src="script.js"></script>
+  </body>
+</html>
